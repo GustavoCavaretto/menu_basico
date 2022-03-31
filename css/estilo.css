@@ -1,0 +1,33 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+   
+}
+body{
+    margin: auto;
+    background-color: antiquewhite;
+}
+nav{
+    background-color: aliceblue;
+}
+li{
+    display: inline-block;
+}
+ul{
+    /* remove icone do li */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav>ul>li>a{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+nav>ul>li>a:hover{
+    background-color: white;
+    color: black;
+
+}
