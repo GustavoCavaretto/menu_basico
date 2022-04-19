@@ -47,6 +47,11 @@ nav ul li a:hover{
     
 }
 
+#icone-responsivo{
+    float: left;
+    display: none;
+}
+
 #icones{
     float: left;
     width: 100%;
@@ -182,6 +187,30 @@ html{
 :target{
     scroll-behavior: smooth;
 }
+
+.verde{
+    color: rgb(86, 129, 23);
+}
+
+/* css seta voltar ao topo */
+
+#topo{
+    background-color: #000;
+    color: #FFF;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#topo a{
+    color: #FFF;
+}
+
+
 /* final versão desktop */
 
 @media only screen and (max-width: 768px){
@@ -201,6 +230,7 @@ html{
     }
     .icones-img{
         width: 100%;
+        height: 125px;
     }
    .imagens-coluna{
        width: 50%;
@@ -214,6 +244,17 @@ html{
    .tamanho-video{
        width: 100%;
    }
+
+   #icone-responsivo{
+       display: block;
+       padding: 15px;
+       cursor: pointer;
+   }
+
+   #exibe-menu{
+       display: none;
+   }
+
 
 }
 /* inicio versão mobile */

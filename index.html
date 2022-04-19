@@ -23,38 +23,48 @@
     <div id="container">
         <nav>
             <ul>
+
+                <li id="icone-responsivo">
+                    <i class="fa-solid fa-bars fa-2x"
+                    onclick="exibeMenu()"></i>
+                </li>
+
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-frog"></i>
+                        <i class="fa-solid fa-frog fa-2x verde"></i>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#icones">
-                        <i class="fa-solid fa-font-awesome"></i>
-                        Ícones
-                    </a>
-                </li>
+                <div id="exibe-menu">
 
-                <li>
-                    <a href="#imagens">
-                        <i class="fa-solid fa-image"></i> Imagens
-                    </a>
-                </li>
+                    <li>
+                        <a href="#icones">
+                            <i class="fa-solid fa-font-awesome"></i>
+                            Ícones
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#imagens">
+                            <i class="fa-solid fa-image"></i> Imagens
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#videos">
+                            <i class="fa-solid fa-video"></i>
+                            Vídeos
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#mapas">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Mapas
+                        </a>
+                    </li>
+                </div>
 
-                <li>
-                    <a href="#videos">
-                        <i class="fa-solid fa-video"></i>
-                        Vídeos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#mapas">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Mapas
-                    </a>
-                </li>
 
             </ul>
         </nav>
@@ -200,6 +210,12 @@
             </div>
         </main>
 
+        <div id="topo">
+            <a href="#container">
+                <i class="fa-solid fa-arrow-up-long fa-3x"></i>
+            </a>
+        </div>
+
         <footer>
             <p>
                 &copy;Desenvolvido por: <span class="negrito">Gustavo Cavaretto</span>
@@ -214,6 +230,20 @@
     <!-- Scripts irão ficar abaixo -->
     <!-- Importação do JS do Fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- importação do jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- script especifico da pagina -->
+    <!-- linguagem js=java script -->
+
+    <script>
+        // cria a finção exibe menu
+        function exibeMenu(){
+            // exibe / oculta o menu mobile (hamburguer)
+            $('#exibe-menu').toggle()
+        }
+    </script>
 </body>
 
 </html>
